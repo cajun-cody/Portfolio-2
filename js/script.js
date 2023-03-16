@@ -46,5 +46,12 @@ ScrollReveal().reveal('.services-container, .portfolio-box, .contact form', { or
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
-
+//Multiple text with type.js
+const typed = new Typed('.multiple-text', {
+    strings: ['Creator', 'FullStack Developer', 'Software Tester',],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true
+})
 
