@@ -1,14 +1,11 @@
 // Toggle manu-icon in nav bar when on smaller window
-let menuIcon = document.getElementById('#menu-icon');
+let menuIcon = document.getElementById('menu-icon');
 let navbar = document.querySelector('.navbar');
 
-menuIcon.onClick = () => {
-    console.log("Hello!")
+menuIcon.addEventListener('click', () => {
     menuIcon.classList.toggle('bxs-x-circle');
     navbar.classList.toggle('active');
-};
-
-
+});
 
 // Scrolling active will be dependent on what section is in the window and putting that one active and others inactive. 
 
@@ -36,6 +33,18 @@ let header = document.querySelector('header');
 
 header.classList.toggle('sticky', window.scrollY > 100);
 
+// Scroll reveal used to animate contect for section
+ScrollReveal({ 
+    reset: true,
+    distance: '80px',
+    duration: 2000,
+    delay: 200
+});
+
+ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+ScrollReveal().reveal('.services-container, .portfolio-box, .contact form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
+ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 
 

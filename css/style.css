@@ -98,7 +98,7 @@ span {
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: rgb(0, 0, 0);
     font-size: 4rem;
-    /* text-shadow: black 1px 0 10px; */
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
 }
 
 .home-content h1 {
@@ -418,6 +418,23 @@ transform: scale(1.02);
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
+    }
+
+    .home {
+        width: 120vh;
+    }
+
+    .about {
+        flex-direction: column-reverse;
+     }
+
+    .about-img {
+        width: 100vh;
+        margin-top: 4rem;
+    }
+
+    .portfolio-container {
+        grid-template-columns:1fr;
     }
 }
 
